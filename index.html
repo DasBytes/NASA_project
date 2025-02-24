@@ -16,28 +16,9 @@
         <button onclick="fetchAPOD()">Get APOD</button>
         <div id="apod-container"></div>
         <button onclick="changeSize()">Change Size</button>
-        <button onclick="changeShape()">Change Shape</button>
+        
 
-    <script>
-        function changeSize() {
-            const apodContainer = document.getElementById('apod-container');
-            if (apodContainer.style.width === '200px') {
-                apodContainer.style.width = '400px';
-                apodContainer.style.height = '400px';
-            } else {
-                apodContainer.style.width = '200px';
-                apodContainer.style.height = '200px';
-            }
-        }
-
-        function changeShape() {
-            const apodContainer = document.getElementById('apod-container');
-            if (apodContainer.style.borderRadius === '50%') {
-                apodContainer.style.borderRadius = '0';
-            } else {
-                apodContainer.style.borderRadius = '50%';
-            }
-        }
+ 
     </script>
     </section>
     <section id="mars">

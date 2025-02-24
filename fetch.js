@@ -53,11 +53,4 @@ async function fetchAsteroids() {
         }
     }
 
-    function changeShape() {
-        const apodContainer = document.getElementById('apod-container');
-        if (apodContainer.style.borderRadius === '50%') {
-            apodContainer.style.borderRadius = '0';
-        } else {
-            apodContainer.style.borderRadius = '50%';
-        }
-    }
+
