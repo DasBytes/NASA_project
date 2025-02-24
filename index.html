@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA data and images</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="header">NASA images</h1>
+    </header>
+
+    <section id="apod">
+        <h2>Picture of the Day</h2>
+        <button onclick="fetchAPOD()">Get APOD</button>
+        <div id="apod-container"></div>
+        <button onclick="changeSize()">Change Size</button>
+        <button onclick="changeShape()">Change Shape</button>
+
+    <script>
+        function changeSize() {
+            const apodContainer = document.getElementById('apod-container');
+            if (apodContainer.style.width === '200px') {
+                apodContainer.style.width = '400px';
+                apodContainer.style.height = '400px';
+            } else {
+                apodContainer.style.width = '200px';
+                apodContainer.style.height = '200px';
+            }
+        }
+
+        function changeShape() {
+            const apodContainer = document.getElementById('apod-container');
+            if (apodContainer.style.borderRadius === '50%') {
+                apodContainer.style.borderRadius = '0';
+            } else {
+                apodContainer.style.borderRadius = '50%';
+            }
+        }
+    </script>
+    </section>
+    <section id="mars">
+        <h2>Mars Rover Photos</h2>
+        <label for="sol">Sol (Martian Day):</label>
+        <input type="number" id="sol" value="1000">
+        <label for="camera">Camera:</label>
+        <select id="camera">
+            <option value="FHAZ">Front Hazard Avoidance Camera</option>
+            <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+        </select>
+        <button onclick="fetchMarsPhotos()">Get Mars Photos</button>
+        <div id="mars-container"></div>
+    </section>
+
+    <section id="earth">
+        <h2>Earth Images</h2>
+        <button onclick="fetchEarthImage()">Get Earth Image</button>
+        <div id="earth-container"></div>
+    </section>
+
+    <section id="asteroids">
+        <h2>Asteroid Data</h2>
+        <button onclick="fetchAsteroids()">Get Asteroid Data</button>
+        <ul id="asteroid-container"></ul>
+    </section>
+
+    <script src="fetch.js"></script>
+</body>
+</html>
+

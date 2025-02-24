@@ -1,0 +1,92 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #160707;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #20232a;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #61dafb;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #61dafb;
+}
+
+section {
+    background-color: #282c34;
+    margin: 20px 0;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #61dafb;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select, button {
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #61dafb;
+    color: #20232a;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+
+#apod-container, #mars-container, #earth-container, #asteroid-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #20232a;
+    border-radius: 5px;
+}
+
+#apod-container img, #mars-container img, #earth-container img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
